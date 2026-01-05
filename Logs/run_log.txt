@@ -1,0 +1,173 @@
+
+----- Run started at 2025-12-31 20:27:02 -----
+
+Step 1: Running ML_Trading_File1.ipynb...
+Passed unknown parameter: run_date
+Input notebook does not contain a cell with tag 'parameters'
+Executing:   0%|                                                                              | 0/13 [00:00<?, ?cell/s]0.00s - Debugger warning: It seems that frozen modules are being used, which may
+0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+0.00s - to python to disable frozen modules.
+0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+Executing:   8%|#####3                                                                | 1/13 [00:03<00:36,  3.01s/cell]Executing:  23%|################1                                                     | 3/13 [00:04<00:14,  1.44s/cell]Executing:  31%|#####################5                                                | 4/13 [00:08<00:18,  2.07s/cell]Executing:  77%|#####################################################                | 10/13 [00:09<00:02,  1.39cell/s]Executing: 100%|#####################################################################| 13/13 [00:10<00:00,  1.28cell/s]
+
+Step 2: Running Alpha_Research_File2.ipynb...
+Passed unknown parameter: run_date
+Input notebook does not contain a cell with tag 'parameters'
+Executing:   0%|                                                                              | 0/18 [00:00<?, ?cell/s]Executing:   6%|###8                                                                  | 1/18 [00:01<00:22,  1.30s/cell]Executing:  17%|###########6                                                          | 3/18 [00:03<00:15,  1.03s/cell]Executing:  39%|###########################2                                          | 7/18 [00:03<00:03,  2.88cell/s]Executing:  83%|#########################################################5           | 15/18 [00:05<00:00,  3.68cell/s]Executing: 100%|#####################################################################| 18/18 [00:05<00:00,  3.27cell/s]
+
+Step 3: Running Production_v1.0.ipynb...
+Passed unknown parameter: run_date
+Input notebook does not contain a cell with tag 'parameters'
+Executing:   0%|                                                                              | 0/11 [00:00<?, ?cell/s]Executing:   9%|######3                                                               | 1/11 [00:01<00:19,  1.94s/cell]Executing:  18%|############7                                                         | 2/11 [00:06<00:31,  3.46s/cell]Executing:  36%|#########################4                                            | 4/11 [00:07<00:10,  1.47s/cell]Executing:  45%|###############################8                                      | 5/11 [00:10<00:12,  2.03s/cell]Executing:  55%|######################################1                               | 6/11 [00:10<00:07,  1.44s/cell]Executing: 100%|#####################################################################| 11/11 [00:11<00:00,  1.00s/cell]
+----- Run finished at 2025-12-31 20:27:29 -----
+
+
+----- Run started at 2026-01-02 11:00:04 -----
+
+Step 1: Running ML_Trading_File1.ipynb...
+Passed unknown parameter: run_date
+Input notebook does not contain a cell with tag 'parameters'
+Executing:   0%|                                                                              | 0/13 [00:00<?, ?cell/s]0.00s - Debugger warning: It seems that frozen modules are being used, which may
+0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+0.00s - to python to disable frozen modules.
+0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+Executing:   8%|█████▍                                                                | 1/13 [00:03<00:42,  3.57s/cell]Executing:  23%|████████████████▏                                                     | 3/13 [00:05<00:16,  1.64s/cell]Executing:  31%|█████████████████████▌                                                | 4/13 [00:07<00:16,  1.85s/cell]Executing:  77%|█████████████████████████████████████████████████████                | 10/13 [00:09<00:02,  1.45cell/s]Executing: 100%|█████████████████████████████████████████████████████████████████████| 13/13 [00:10<00:00,  1.30cell/s]
+
+Step 2: Running Alpha_Research_File2.ipynb...
+Passed unknown parameter: run_date
+Input notebook does not contain a cell with tag 'parameters'
+Executing:   0%|                                                                              | 0/18 [00:00<?, ?cell/s]Executing:   6%|███▉                                                                  | 1/18 [00:01<00:33,  1.99s/cell]Executing:  17%|███████████▋                                                          | 3/18 [00:03<00:17,  1.14s/cell]Executing:  39%|███████████████████████████▏                                          | 7/18 [00:03<00:04,  2.59cell/s]Executing:  83%|█████████████████████████████████████████████████████████▌           | 15/18 [00:05<00:00,  3.52cell/s]Executing: 100%|█████████████████████████████████████████████████████████████████████| 18/18 [00:06<00:00,  2.99cell/s]
+
+Step 3: Running Production_v1.0.ipynb...
+Passed unknown parameter: run_date
+Input notebook does not contain a cell with tag 'parameters'
+Executing:   0%|                                                                              | 0/11 [00:00<?, ?cell/s]Executing:   9%|██████▎                                                               | 1/11 [00:01<00:19,  1.96s/cell]Executing:  18%|████████████▋                                                         | 2/11 [00:08<00:39,  4.38s/cell]Executing:  36%|█████████████████████████▍                                            | 4/11 [00:08<00:12,  1.81s/cell]Executing:  45%|███████████████████████████████▊                                      | 5/11 [00:11<00:13,  2.22s/cell]Executing:  64%|████████████████████████████████████████████▌                         | 7/11 [00:11<00:04,  1.21s/cell]Executing: 100%|█████████████████████████████████████████████████████████████████████| 11/11 [00:12<00:00,  1.14s/cell]
+
+All notebooks executed successfully!
+----- Run finished at 2026-01-02 11:00:33 -----
+
+
+----- Run started at 2026-01-04 11:00:08 -----
+
+Step 1: Running ML_Trading_File1.ipynb...
+Passed unknown parameter: run_date
+Input notebook does not contain a cell with tag 'parameters'
+Executing:   0%|                                                                              | 0/13 [00:00<?, ?cell/s]0.00s - Debugger warning: It seems that frozen modules are being used, which may
+0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+0.00s - to python to disable frozen modules.
+0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+Executing:   8%|█████▍                                                                | 1/13 [00:04<00:55,  4.59s/cell]Executing:  23%|████████████████▏                                                     | 3/13 [00:11<00:37,  3.72s/cell]Executing:  31%|█████████████████████▌                                                | 4/13 [00:14<00:32,  3.63s/cell]Executing:  77%|█████████████████████████████████████████████████████                | 10/13 [00:17<00:03,  1.21s/cell]Executing: 100%|█████████████████████████████████████████████████████████████████████| 13/13 [00:17<00:00,  1.35s/cell]
+
+Step 2: Running Alpha_Research_File2.ipynb...
+Passed unknown parameter: run_date
+Input notebook does not contain a cell with tag 'parameters'
+Executing:   0%|                                                                              | 0/18 [00:00<?, ?cell/s]Executing:   6%|███▉                                                                  | 1/18 [00:01<00:30,  1.81s/cell]Executing:  17%|███████████▋                                                          | 3/18 [00:03<00:16,  1.09s/cell]Executing:  39%|███████████████████████████▏                                          | 7/18 [00:03<00:04,  2.71cell/s]Executing:  83%|█████████████████████████████████████████████████████████▌           | 15/18 [00:05<00:00,  3.64cell/s]Executing: 100%|█████████████████████████████████████████████████████████████████████| 18/18 [00:05<00:00,  3.11cell/s]
+
+Step 3: Running Production_v1.0.ipynb...
+Passed unknown parameter: run_date
+Input notebook does not contain a cell with tag 'parameters'
+Executing:   0%|                                                                              | 0/11 [00:00<?, ?cell/s]Executing:   9%|██████▎                                                               | 1/11 [00:01<00:13,  1.32s/cell]Executing:  18%|████████████▋                                                         | 2/11 [00:10<00:54,  6.05s/cell]Executing:  36%|█████████████████████████▍                                            | 4/11 [00:11<00:17,  2.45s/cell]Executing:  45%|███████████████████████████████▊                                      | 5/11 [00:14<00:16,  2.70s/cell]Executing:  64%|████████████████████████████████████████████▌                         | 7/11 [00:14<00:05,  1.46s/cell]Executing: 100%|█████████████████████████████████████████████████████████████████████| 11/11 [00:15<00:00,  1.39s/cell]
+
+All notebooks executed successfully!
+----- Run finished at 2026-01-04 11:00:47 -----
+
+
+----- Run started at 2026-01-05 11:00:03 -----
+
+Step 1: Running ML_Trading_File1.ipynb...
+Passed unknown parameter: run_date
+Input notebook does not contain a cell with tag 'parameters'
+Executing:   0%|                                                                              | 0/13 [00:00<?, ?cell/s]0.01s - Debugger warning: It seems that frozen modules are being used, which may
+0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+0.00s - to python to disable frozen modules.
+0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+Executing:   8%|█████▍                                                                | 1/13 [00:03<00:37,  3.14s/cell]Executing:  23%|████████████████▏                                                     | 3/13 [00:04<00:13,  1.32s/cell]Executing:  31%|█████████████████████▌                                                | 4/13 [00:06<00:14,  1.63s/cell]Executing:  77%|█████████████████████████████████████████████████████                | 10/13 [00:08<00:01,  1.70cell/s]Executing: 100%|█████████████████████████████████████████████████████████████████████| 13/13 [00:08<00:00,  1.51cell/s]
+
+Step 2: Running Alpha_Research_File2.ipynb...
+Passed unknown parameter: run_date
+Input notebook does not contain a cell with tag 'parameters'
+Executing:   0%|                                                                              | 0/18 [00:00<?, ?cell/s]Executing:   6%|███▉                                                                  | 1/18 [00:01<00:33,  1.98s/cell]Executing:  17%|███████████▋                                                          | 3/18 [00:03<00:18,  1.22s/cell]Executing:  39%|███████████████████████████▏                                          | 7/18 [00:03<00:04,  2.44cell/s]Executing:  83%|█████████████████████████████████████████████████████████▌           | 15/18 [00:05<00:00,  3.41cell/s]Executing: 100%|█████████████████████████████████████████████████████████████████████| 18/18 [00:06<00:00,  2.89cell/s]
+
+Step 3: Running Production_v1.0.ipynb...
+Passed unknown parameter: run_date
+Input notebook does not contain a cell with tag 'parameters'
+Executing:   0%|                                                                              | 0/11 [00:00<?, ?cell/s]Executing:   9%|██████▎                                                               | 1/11 [00:01<00:13,  1.32s/cell]Executing:  18%|████████████▋                                                         | 2/11 [00:06<00:34,  3.87s/cell]Executing:  36%|█████████████████████████▍                                            | 4/11 [00:07<00:11,  1.61s/cell]Executing:  45%|███████████████████████████████▊                                      | 5/11 [00:10<00:11,  1.99s/cell]Executing:  73%|██████████████████████████████████████████████████▉                   | 8/11 [00:10<00:02,  1.14cell/s]Executing: 100%|█████████████████████████████████████████████████████████████████████| 11/11 [00:11<00:00,  1.01s/cell]
+
+All notebooks executed successfully!
+----- Run finished at 2026-01-05 11:00:30 -----
+
+
+----- Run started at 2026-01-05 13:19:05 -----
+
+Step 1: Running ML_Trading_File1.ipynb...
+Passed unknown parameter: run_date
+Input notebook does not contain a cell with tag 'parameters'
+Executing:   0%|                                                                              | 0/13 [00:00<?, ?cell/s]0.00s - Debugger warning: It seems that frozen modules are being used, which may
+0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+0.00s - to python to disable frozen modules.
+0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+Executing:   8%|█████▍                                                                | 1/13 [00:02<00:25,  2.11s/cell]Executing:  23%|████████████████▏                                                     | 3/13 [00:02<00:07,  1.25cell/s]Executing:  31%|█████████████████████▌                                                | 4/13 [00:05<00:14,  1.63s/cell]Executing:  77%|█████████████████████████████████████████████████████                | 10/13 [00:07<00:01,  1.79cell/s]Executing: 100%|█████████████████████████████████████████████████████████████████████| 13/13 [00:07<00:00,  1.72cell/s]
+
+Step 2: Running Alpha_Research_File2.ipynb...
+Passed unknown parameter: run_date
+Input notebook does not contain a cell with tag 'parameters'
+Executing:   0%|                                                                              | 0/18 [00:00<?, ?cell/s]Executing:   6%|███▉                                                                  | 1/18 [00:01<00:22,  1.34s/cell]Executing:  17%|███████████▋                                                          | 3/18 [00:03<00:15,  1.04s/cell]Executing:  39%|███████████████████████████▏                                          | 7/18 [00:03<00:03,  2.82cell/s]Executing:  83%|█████████████████████████████████████████████████████████▌           | 15/18 [00:05<00:00,  3.61cell/s]Executing: 100%|█████████████████████████████████████████████████████████████████████| 18/18 [00:05<00:00,  3.21cell/s]
+
+Step 3: Running Production_v1.0.ipynb...
+Passed unknown parameter: run_date
+Input notebook does not contain a cell with tag 'parameters'
+Executing:   0%|                                                                              | 0/12 [00:00<?, ?cell/s]Executing:   8%|█████▊                                                                | 1/12 [00:01<00:14,  1.34s/cell]Executing:  17%|███████████▋                                                          | 2/12 [00:03<00:18,  1.80s/cell]Executing:  33%|███████████████████████▎                                              | 4/12 [00:03<00:06,  1.22cell/s]Executing:  42%|█████████████████████████████▏                                        | 5/12 [00:06<00:10,  1.50s/cell]Executing:  58%|████████████████████████████████████████▊                             | 7/12 [00:07<00:04,  1.21cell/s]Executing: 100%|█████████████████████████████████████████████████████████████████████| 12/12 [00:07<00:00,  1.53cell/s]
+
+All notebooks executed successfully!
+----- Run finished at 2026-01-05 13:19:27 -----
+
+
+----- Run started at 2026-01-05 13:55:47 -----
+
+Step 1: Running ML_Trading_File1.ipynb...
+Passed unknown parameter: run_date
+Input notebook does not contain a cell with tag 'parameters'
+Executing:   0%|                                                                              | 0/13 [00:00<?, ?cell/s]0.00s - Debugger warning: It seems that frozen modules are being used, which may
+0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+0.00s - to python to disable frozen modules.
+0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+Executing:   8%|█████▍                                                                | 1/13 [00:02<00:25,  2.15s/cell]Executing:  23%|████████████████▏                                                     | 3/13 [00:02<00:08,  1.25cell/s]Executing:  31%|█████████████████████▌                                                | 4/13 [00:04<00:09,  1.09s/cell]Executing:  77%|█████████████████████████████████████████████████████                | 10/13 [00:05<00:01,  2.40cell/s]Executing: 100%|█████████████████████████████████████████████████████████████████████| 13/13 [00:05<00:00,  2.18cell/s]
+
+Step 2: Running Alpha_Research_File2.ipynb...
+Passed unknown parameter: run_date
+Input notebook does not contain a cell with tag 'parameters'
+Executing:   0%|                                                                              | 0/18 [00:00<?, ?cell/s]Executing:   6%|███▉                                                                  | 1/18 [00:01<00:22,  1.32s/cell]Executing:  17%|███████████▋                                                          | 3/18 [00:03<00:15,  1.01s/cell]Executing:  39%|███████████████████████████▏                                          | 7/18 [00:03<00:03,  2.92cell/s]Executing:  83%|█████████████████████████████████████████████████████████▌           | 15/18 [00:05<00:00,  3.69cell/s]Executing: 100%|█████████████████████████████████████████████████████████████████████| 18/18 [00:05<00:00,  3.28cell/s]
+
+Step 3: Running Production_v1.0.ipynb...
+Passed unknown parameter: run_date
+Input notebook does not contain a cell with tag 'parameters'
+Executing:   0%|                                                                              | 0/12 [00:00<?, ?cell/s]Executing:   8%|█████▊                                                                | 1/12 [00:01<00:14,  1.31s/cell]Executing:  17%|███████████▋                                                          | 2/12 [00:03<00:17,  1.77s/cell]Executing:  33%|███████████████████████▎                                              | 4/12 [00:03<00:06,  1.25cell/s]Executing:  42%|█████████████████████████████▏                                        | 5/12 [00:06<00:09,  1.40s/cell]Executing:  58%|████████████████████████████████████████▊                             | 7/12 [00:06<00:03,  1.31cell/s]Executing: 100%|█████████████████████████████████████████████████████████████████████| 12/12 [00:07<00:00,  1.64cell/s]
+
+All notebooks executed successfully!
+----- Run finished at 2026-01-05 13:56:06 -----
+
+
+----- Run started at 2026-01-05 14:08:34 -----
+
+Step 1: Running ML_Trading_File1.ipynb...
+Passed unknown parameter: run_date
+Input notebook does not contain a cell with tag 'parameters'
+Executing:   0%|                                                                              | 0/13 [00:00<?, ?cell/s]0.00s - Debugger warning: It seems that frozen modules are being used, which may
+0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+0.00s - to python to disable frozen modules.
+0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+Executing:   8%|█████▍                                                                | 1/13 [00:02<00:24,  2.05s/cell]Executing:  23%|████████████████▏                                                     | 3/13 [00:02<00:07,  1.29cell/s]Executing:  31%|█████████████████████▌                                                | 4/13 [00:04<00:09,  1.11s/cell]Executing:  77%|█████████████████████████████████████████████████████                | 10/13 [00:05<00:01,  2.36cell/s]Executing: 100%|█████████████████████████████████████████████████████████████████████| 13/13 [00:05<00:00,  2.17cell/s]
+
+Step 2: Running Alpha_Research_File2.ipynb...
+Passed unknown parameter: run_date
+Input notebook does not contain a cell with tag 'parameters'
+Executing:   0%|                                                                              | 0/18 [00:00<?, ?cell/s]Executing:   6%|███▉                                                                  | 1/18 [00:01<00:25,  1.52s/cell]Executing:  17%|███████████▋                                                          | 3/18 [00:03<00:14,  1.03cell/s]Executing:  39%|███████████████████████████▏                                          | 7/18 [00:03<00:03,  3.03cell/s]Executing:  83%|█████████████████████████████████████████████████████████▌           | 15/18 [00:05<00:00,  3.77cell/s]Executing: 100%|█████████████████████████████████████████████████████████████████████| 18/18 [00:05<00:00,  3.32cell/s]
+
+Step 3: Running Production_v1.0.ipynb...
+Passed unknown parameter: run_date
+Input notebook does not contain a cell with tag 'parameters'
+Executing:   0%|                                                                              | 0/12 [00:00<?, ?cell/s]Executing:   8%|█████▊                                                                | 1/12 [00:01<00:14,  1.30s/cell]Executing:  17%|███████████▋                                                          | 2/12 [00:03<00:17,  1.75s/cell]Executing:  33%|███████████████████████▎                                              | 4/12 [00:03<00:06,  1.25cell/s]Executing:  42%|█████████████████████████████▏                                        | 5/12 [00:06<00:09,  1.43s/cell]Executing:  67%|██████████████████████████████████████████████▋                       | 8/12 [00:06<00:02,  1.57cell/s]Executing: 100%|█████████████████████████████████████████████████████████████████████| 12/12 [00:07<00:00,  1.62cell/s]
+
+All notebooks executed successfully!
+----- Run finished at 2026-01-05 14:08:53 -----
+
