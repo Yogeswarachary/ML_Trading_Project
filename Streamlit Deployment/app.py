@@ -11,10 +11,10 @@ st.title("📈 ML Alpha Trading – Performance Dashboard")
 base_path = r"C:\Users\myoge\Contacts\Regression Based Project"
 
 # Try to locate trading_strategy_results.csv
-csv_path = os.path.join(base_path, "trading_strategy_results.csv")
+csv_path = os.path.join(base_path, "trading_results.csv")
 
 if not os.path.exists(csv_path):
-    st.error("❌ trading_strategy_results.csv not found. Please run the trading notebooks first.")
+    st.error("❌ trading_results.csv not found. Please run the trading notebooks first.")
     st.stop()
 
 # Load the latest trading results
@@ -34,7 +34,6 @@ if "Win_Rate" in df.columns:
     avg_win = df["Win_Rate"].mean()
     st.metric(label="Average Win Rate (%)", value=f"{avg_win*100:.2f}%")
 
-# If multiple daily CSVs exist in 'runs/', read them all to plot Sharpe trend
 # If multiple daily CSVs exist in 'runs/', read them all to plot Sharpe trend
 runs_path = os.path.join(base_path, "runs")
 
