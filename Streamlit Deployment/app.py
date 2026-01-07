@@ -1,70 +1,94 @@
 import streamlit as st
 import pandas as pd
+import glob
 import os
-from datetime import datetime
-import matplotlib.pyplot as plt
+import io
+import requests
 
+# DATA LAYER
+@st.cache_data
+def load_raw():
+    """Loads the main ML trading dataset (CSV) directly from GitHub"""
+    url = "https://raw.githubusercontent.com/Yogeswarachary/ML_Trading_Project/main/CSV%20Data/ml_trading_data.csv"
+    response = requests.get(url)
+    response.raise_for_status() 
+    
+    df = pd.read_csv(io.StringIO(response.text))
+    return df
+
+
+@st.cache_data
+def build_dataset():
+    """Wrapper function to prepare data (extendable later)"""
+    df = load_raw()
+    return df
+
+
+@st.cache_data
+def load_latest_trading_results():
+    """Load the most recent trading_results*.csv file"""
+    
+    # Search for CSVs in possible folders
+    possible_paths = [
+        "streamlit deployment/trading_results*.csv",
+        "streamlit deployement/trading_results*.csv",  # note: typo fallback
+        "trading_results*.csv"
+    ]
+    
+    deployment_files = []
+    for path in possible_paths:
+        deployment_files.extend(glob.glob(path))
+    
+    if not deployment_files:
+        st.error("""
+        ❌ No `trading_results*.csv` found!
+        **Please check one of these paths:**
+        - `streamlit deployment/`
+        - `streamlit deployement/`
+        - project root
+        """)
+        st.stop()
+    
+    # Pick the latest file
+    latest_file = max(deployment_files, key=os.path.getctime)
+    st.info(f"Loaded latest file: **{os.path.basename(latest_file)}**")
+    
+    df = pd.read_csv(latest_file)
+    return df, latest_file
+
+
+# MAIN DASHBOARD
 st.set_page_config(page_title="ML Alpha Trading Dashboard", layout="wide")
+st.title("ML Alpha Trading – Performance Dashboard")
 
-st.title("📈 ML Alpha Trading – Performance Dashboard")
+# Load the trading results
+df_trades, file_used = load_latest_trading_results()
 
-base_path = r"C:\Users\myoge\Contacts\Regression Based Project"
+# KPI CARDS
+st.markdown("## Strategy Performance KPIs")
 
-# Try to locate trading_strategy_results.csv
-csv_path = os.path.join(base_path, "trading_results.csv")
+latest_metrics = df_trades.iloc[0]  # Assuming summary metrics are in first row
 
-if not os.path.exists(csv_path):
-    st.error("❌ trading_results.csv not found. Please run the trading notebooks first.")
-    st.stop()
+col1, col2, col3, col4 = st.columns(4)
+with col1:
+    st.metric("📈 Sharpe Ratio", f"{latest_metrics.get('sharpe', 0):.3f}")
+with col2:
+    st.metric("🏆 Win Rate", f"{latest_metrics.get('win_rate', 0):.1%}")
+with col3:
+    st.metric("📉 Max Drawdown", f"{latest_metrics.get('max_dd', 0):.1%}")
+with col4:
+    st.metric("🔄 Turnover", f"{latest_metrics.get('turnover', 0):.1f}")
 
-# Load the latest trading results
-df = pd.read_csv(csv_path)
+# RAW DATA PREVIEW
+st.markdown("## Raw Strategy Results")
+st.dataframe(
+    df_trades.head(5),
+    use_container_width=True,
+    hide_index=False
+)
 
-# Display dataframe preview
-st.subheader("Raw Strategy Results (latest file)")
-st.dataframe(df.head())
-
-# Extract Sharpe and Win Rate columns (if available)
-if "Sharpe" in df.columns:
-    avg_sharpe = df["Sharpe"].mean()
-    st.metric(label="Average Sharpe Ratio", value=f"{avg_sharpe:.3f}")
-
-
-if "Win_Rate" in df.columns:
-    avg_win = df["Win_Rate"].mean()
-    st.metric(label="Average Win Rate (%)", value=f"{avg_win*100:.2f}%")
-
-# If multiple daily CSVs exist in 'runs/', read them all to plot Sharpe trend
-runs_path = os.path.join(base_path, "runs")
-
-sharpe_trend = []
-
-if os.path.exists(runs_path):
-    for file in os.listdir(runs_path):
-        if file.endswith(".csv") and "trading_results" in file:  # ← More flexible
-            try:
-                df_temp = pd.read_csv(os.path.join(runs_path, file))
-                # Try different possible Sharpe column names
-                sharpe_col = None
-                for col in ['sharpe_gross', 'Sharpe', 'sharpe_net', 'Sharpe Ratio']:
-                    if col in df_temp.columns:
-                        sharpe_col = col
-                        break
-                
-                if sharpe_col:
-                    date_str = file.split("_")[-1].replace(".csv", "")
-                    sharpe_trend.append({
-                        "Date": date_str,
-                        "Sharpe": df_temp[sharpe_col].mean()
-                    })
-            except Exception as e:
-                st.warning(f"Skipping {file}: {e}")
-
-if sharpe_trend:
-    trend_df = pd.DataFrame(sharpe_trend).sort_values("Date")
-    trend_df["Date"] = pd.to_datetime(trend_df["Date"])
-    st.subheader("📊 Sharpe Ratio Trend Over Time")
-    st.line_chart(trend_df.set_index("Date"))
-else:
-    st.info("No historical Sharpe CSVs found in runs/ folder yet.")
-
+# SUMMARY TABLE
+if len(df_trades) > 1:
+    st.markdown("## 📈 Performance Summary")
+    summary = df_trades.iloc[0][['sharpe', 'win_rate', 'max_dd', 'turnover']].round(4)
+    st.dataframe(summary.to_frame("Latest"), use_container_width=True)
