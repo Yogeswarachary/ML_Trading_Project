@@ -26,14 +26,14 @@ def build_dataset():
 
 @st.cache_data
 def load_latest_trading_results():
-    """Load the most recent trading_results*.csv file"""
-    
-    # Search for CSVs in possible folders
-    possible_paths = [
-        "streamlit deployment/trading_results*.csv",
-        "streamlit deployement/trading_results*.csv",  # note: typo fallback
-        "trading_results*.csv"
-    ]
+    """Load trading results CSV directly from GitHub"""
+    url = "https://raw.githubusercontent.com/Yogeswarachary/ML_Trading_Project/main/streamlit%20deployment/trading_results.csv"
+    response = requests.get(url)
+    response.raise_for_status()
+    df = pd.read_csv(io.StringIO(response.text))
+    st.info("📂 Loaded trading_results.csv from GitHub")
+    return df, "GitHub Remote"
+
     
     deployment_files = []
     for path in possible_paths:
